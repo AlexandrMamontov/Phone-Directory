@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телефонный справочник</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="phone-directory">
+        <div class="phone-directory__container">
+            <h1 class="phone-directory__title">Телефонный справочник</h1>
+
+            <h2 class="phone-directory__subtitle">Фильтрация</h2>
+            <form action="#" class="phone-directory__form" id="filter-form">
+                <input type="text" class="phone-directory__input" id="input-office" placeholder="Город/подразделение">
+                <input type="text" class="phone-directory__input" id="input-characteristic-phone-number" placeholder="Характеристика номера">
+                <input type="text" class="phone-directory__input" id="input-worker" placeholder="Сотрудник">
+                <input type="text" class="phone-directory__input" id="input-telecom-operator" placeholder="Оператор связи и УЗ">
+                <input type="text" class="phone-directory__input" id="input-comment" placeholder="Комментарий">
+                <input type="text" class="phone-directory__input" id="input-check" placeholder="Проверка">
+            </form>
+    
+            <table class="phone-directory__table">
+                <thead>
+                    <tr class="phone-directory__header">
+                        <th>Город/подразделение</th>
+                        <th>Характеристика номера</th>
+                        <th>Сотрудник</th>
+                        <th>Оператор связи и УЗ</th>
+                        <th>Комментарий (ПМ)</th>
+                        <th>Последняя успешная проверка</th>
+                    </tr>
+                </thead>
+                <tbody class="phone-directory__office">
+                    <tr>
+                        <td colspan="6" class="office-name">
+                            Великий Новгород, ул. Нехинская д.26
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-directory__data">
+                    <tr>
+                        <td class="phone-number">78162680365</td>
+                        <td class="characteristic-phone-number">Основной номер</td>
+                        <td class="fio">Кирякова Юлия Сергеевна</td>
+                        <td class="telecom-operator">Novofon spb@danila-master.ru</td>
+                        <td class="comment"></td>
+                        <td class="date-check">25.11.2024 8:36</td>
+                    </tr>
+                    <tr>
+                        <td class="phone-number">78162201534</td>
+                        <td class="characteristic-phone-number">Резервный номер</td>
+                        <td class="fio">Кирякова Юлия Сергеевна</td>
+                        <td class="telecom-operator">Telephin NZL52283</td>
+                        <td class="comment"></td>
+                        <td class="date-check">25.11.2024 8:36</td>
+                    </tr>
+                    <tr>
+                        <td class="phone-number">9201304598</td>
+                        <td class="characteristic-phone-number">Корпоративный сотовый</td>
+                        <td class="fio">Кирякова Юлия Сергеевна</td>
+                        <td class="telecom-operator">Мегафон</td>
+                        <td class="comment"></td>
+                        <td class="date-check">25.11.2024 8:36</td>
+                    </tr>
+                    <tr>
+                        <td class="phone-number">5500</td>
+                        <td class="characteristic-phone-number">Короткий внутренний</td>
+                        <td class="fio">Кирякова Юлия Сергеевна</td>
+                        <td class="telecom-operator">Telephin NZL52283</td>
+                        <td class="comment"></td>
+                        <td class="date-check">25.11.2024 8:36</td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-directory__office">
+                    <tr>
+                        <td colspan="6" class="office-name">
+                            Краснодар, ул. Офицерская д.50
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="phone-directory__data">
+                    <tr>
+                        <td class="phone-number">78612041997</td>
+                        <td class="characteristic-phone-number">Основной номер</td>
+                        <td class="fio">Ляшенко Марина Александровна<br>Фёдорова Наталья Васильевна</td>
+                        <td class="telecom-operator">Novofon aruchkinova@danila-master.ru</td>
+                        <td class="comment"></td>
+                        <td class="date-check">19.11.2024 9:12</td>
+                    </tr>
+                    <tr>
+                        <td class="phone-number">78612993610</td>
+                        <td class="characteristic-phone-number">Резервный номер</td>
+                        <td class="fio">Ляшенко Марина Александровна<br>Фёдорова Наталья Васильевна</td>
+                        <td class="telecom-operator">Telphin NZL52283</td>
+                        <td class="comment"></td>
+                        <td class="date-check"></td>
+                    </tr>
+                    <tr>
+                        <td class="phone-number">78612176802</td>
+                        <td class="characteristic-phone-number">Яндекс Карты</td>
+                        <td class="fio">Ляшенко Марина Александровна<br>Фёдорова Наталья Васильевна</td>
+                        <td class="telecom-operator"></td>
+                        <td class="comment"></td>
+                        <td class="date-check"></td>
+                    </tr>
+                    <tr>
+                        <td class="phone-number">78612176563</td>
+                        <td class="characteristic-phone-number">ТВ ТВЦ</td>
+                        <td class="fio">Ляшенко Марина Александровна<br>Фёдорова Наталья Васильевна</td>
+                        <td class="telecom-operator">Novofon belgorod@danila-master.ru</td>
+                        <td class="comment"></td>
+                        <td class="date-check"></td>
+                    </tr>
+                    <tr>
+                        <td class="phone-number">78612176106</td>
+                        <td class="characteristic-phone-number">ТВ Звезда</td>
+                        <td class="fio">Ляшенко Марина Александровна<br>Фёдорова Наталья Васильевна</td>
+                        <td class="telecom-operator">Novofon belgorod@danila-master.ru</td>
+                        <td class="comment"></td>
+                        <td class="date-check"></td>
+                    </tr>
+                    <tr>
+                        <td class="phone-number">9201306039</td>
+                        <td class="characteristic-phone-number">Корпоротивный сотовый</td>
+                        <td class="fio">Ляшенко Марина Александровна</td>
+                        <td class="telecom-operator">Мегафон</td>
+                        <td class="comment"></td>
+                        <td class="date-check"></td>
+                    </tr>
+                    <tr>
+                        <td class="phone-number">9201305881</td>
+                        <td class="characteristic-phone-number">Корпоротивный сотовый</td>
+                        <td class="fio">Фёдорова Наталья Васильевна</td>
+                        <td class="telecom-operator">Мегафон</td>
+                        <td class="comment"></td>
+                        <td class="date-check"></td>
+                    </tr>
+                    <tr>
+                        <td class="phone-number">4500</td>
+                        <td class="characteristic-phone-number">Короткий внутренний</td>
+                        <td class="fio">Ляшенко Марина Александровна</td>
+                        <td class="telecom-operator"></td>
+                        <td class="comment"></td>
+                        <td class="date-check"></td>
+                    </tr>
+                    <tr>
+                        <td class="phone-number">4501</td>
+                        <td class="characteristic-phone-number">Короткий внутренний</td>
+                        <td class="fio">Фёдорова Наталья Васильевна</td>
+                        <td class="telecom-operator"></td>
+                        <td class="comment"></td>
+                        <td class="date-check"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

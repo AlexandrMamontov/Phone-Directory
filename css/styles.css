@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Inter-Regular';
+    font-display: swap;
+    src: local('Inter-Regular'),
+        url('../fonts/Inter-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    font-display: swap;
+    src: local('Inter-Bold'),
+        url('../fonts/Inter-Bold.woff') format('woff');
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Inter-Regular', sans-serif;
+    line-height: normal;
+    color: #333;
+}
+
+.phone-directory__container {
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 100%;
+}
+
+.phone-directory__title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: 'Inter-Bold';
+    font-size: 55px;
+    text-align: center;
+}
+
+.phone-directory__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Inter-Bold';
+    font-size: 35px;
+}
+
+.phone-directory__form {
+    margin-bottom: 100px;
+    display: flex;
+    gap: 10px;
+}
+
+.phone-directory__input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.phone-directory__input:hover {
+    border-color: #000;
+}
+
+.phone-directory__input::placeholder {
+    color: #999;
+}
+
+.phone-directory__table {
+    table-layout: fixed;
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+
+.phone-directory__table > * {
+    width: 25%;
+}
+
+.phone-directory__header {
+    background-color: #2980b9;
+}
+
+.phone-directory__header th {
+    padding: 8px;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+.phone-directory__header th:hover {
+    color: #333;
+    transition: color .3s ease-in-out;
+}
+
+.phone-directory__office {
+    cursor: pointer;
+    font-family: 'Inter-Bold';
+    font-size: 18px;
+    transition: color .3s ease-in-out;
+}
+
+.phone-directory__office:hover {
+    color: orangered;
+    transition: color .3s ease-in-out;
+}
+
+.phone-directory__office td {
+    padding: 16px 8px;
+}
+
+.phone-directory__data {
+    display: none;
+}
+
+.phone-directory__data tr {
+    background-color: #f6f6f6;
+}
+
+.phone-directory__data tr:nth-of-type(odd) {
+    background-color: #e9e9e9;
+}
+
+.phone-directory__data.open {
+    display: table-row-group;
+}
+
+.phone-directory__data td {
+    padding: 8px;
+    text-align: center;
+}
