@@ -43,7 +43,7 @@ body {
 
 .phone-directory__container {
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 25px 15px;
     max-width: 100%;
 }
 
@@ -87,11 +87,6 @@ body {
 .phone-directory__table {
     table-layout: fixed;
     width: 100%;
-    /* border-collapse: collapse; */
-}
-
-.phone-directory__table > * {
-    width: 25%;
 }
 
 .phone-directory__header {
@@ -101,7 +96,7 @@ body {
 .phone-directory__header th {
     padding: 8px;
     font-family: 'Inter-Bold', sans-serif;
-    font-size: 21px;
+    font-size: 18px;
     color: #fff;
     cursor: pointer;
     transition: color .3s ease-in-out;
@@ -128,10 +123,6 @@ body {
     padding: 16px 8px;
 }
 
-.phone-directory__data {
-    display: none;
-}
-
 .phone-directory__data tr {
     background-color: #f6f6f6;
 }
@@ -140,11 +131,30 @@ body {
     background-color: #e9e9e9;
 }
 
-.phone-directory__data.open {
-    display: table-row-group;
-}
-
 .phone-directory__data td {
     padding: 8px;
     text-align: center;
+}
+
+.phone-number {
+    position: relative;
+    padding-left: 40px !important;
+}
+
+.phone-number::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-image: url('https://img.danila-master.ru/uploads/articlesImages/action/classical-monuments/contacts/icon_tel_1.svg?v=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.phone-number.mob::before {
+    background-image: url('https://img.danila-master.ru/uploads/articlesImages/action/classical-monuments/contacts/icon_tel.svg?v=1');
 }
